@@ -3,6 +3,9 @@ package com.company;
 import com.company.Animaux.Carnivore.Carnivore;
 import com.company.Animaux.Herbivore.Herbivore;
 import com.company.Animaux.Omnivore.Omnivore;
+import com.company.Courses.Comestibles.Frais.Frais;
+import com.company.Courses.Comestibles.Frais.FruitsEtLegumes.FruitsEtLegumes;
+import com.company.Courses.Comestibles.Sec.Sec;
 import com.company.Véhicules.Aquatiques.Aquatiques;
 import com.company.Véhicules.Mécaniques.Terrestre.Terrestre;
 import com.company.Véhicules.Mécaniques.Volants.Volant;
@@ -68,8 +71,17 @@ public class Main {
     humain.avance();
     humain.mange();
 
-    System.out
-        .println("Les Courses -------------------------------------------------------------------");
+    System.out.println("Les Courses ------------------------------------------------------------");
 
+    Sec cereals = new Sec("céréals", 2.80);
+    System.out.println(cereals.acheter());
+
+    Frais yaourt = new Frais("yaourt", 1.80);
+    System.out.println(yaourt.acheter() + yaourt.frigo());
+
+    FruitsEtLegumes tomate = new FruitsEtLegumes("tomate", 0.80);
+    System.out.println(tomate.acheter() + tomate.frigo());
+
+    
   }
 }
