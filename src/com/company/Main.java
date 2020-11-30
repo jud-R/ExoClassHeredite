@@ -6,6 +6,8 @@ import com.company.Animaux.Omnivore.Omnivore;
 import com.company.Courses.Comestibles.Frais.Frais;
 import com.company.Courses.Comestibles.Frais.FruitsEtLegumes.FruitsEtLegumes;
 import com.company.Courses.Comestibles.Sec.Sec;
+import com.company.Courses.NonComestible.NonComestible;
+import com.company.Courses.NonComestible.ProduitToxique.ProduitToxique;
 import com.company.Véhicules.Aquatiques.Aquatiques;
 import com.company.Véhicules.Mécaniques.Terrestre.Terrestre;
 import com.company.Véhicules.Mécaniques.Volants.Volant;
@@ -73,15 +75,19 @@ public class Main {
 
     System.out.println("Les Courses ------------------------------------------------------------");
 
-    Sec cereals = new Sec("céréals", 2.80);
+    Sec cereals = new Sec("Céréals", 2.80);
     System.out.println(cereals.acheter());
 
-    Frais yaourt = new Frais("yaourt", 1.80);
+    Frais yaourt = new Frais("Yaourt", 1.80);
     System.out.println(yaourt.acheter() + yaourt.frigo());
 
-    FruitsEtLegumes tomate = new FruitsEtLegumes("tomate", 0.80);
+    FruitsEtLegumes tomate = new FruitsEtLegumes("Tomate", 0.80);
     System.out.println(tomate.acheter() + tomate.frigo());
 
-    
+    NonComestible pq = new NonComestible("Papier Toilette", 1.50);
+    System.out.println(pq.acheter());
+
+    ProduitToxique javel = new ProduitToxique("Javel", 1.12);
+    System.out.println(javel.acheter());
   }
 }
