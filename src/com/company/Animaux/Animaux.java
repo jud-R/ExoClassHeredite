@@ -15,11 +15,4 @@ public abstract class Animaux {
   public void setNom(String nom) {
     this.nom = nom;
   }
-
-  protected abstract void mange();
-
-  public void avance() {
-    System.out.println("C'est un " + nom + " il peu avancer.");
-  }
-
 }

@@ -1,8 +1,9 @@
 package com.company;
 
-import com.company.Animaux.Carnivore.Carnivore;
-import com.company.Animaux.Herbivore.Herbivore;
-import com.company.Animaux.Omnivore.Omnivore;
+import com.company.Animaux.Mammiferes.Mammiferes;
+import com.company.Animaux.Poisson.Poisson;
+import com.company.Animaux.Volant.Insectes.Insectes;
+import com.company.Animaux.Volant.Volatiles;
 import com.company.Courses.Comestibles.Frais.Frais;
 import com.company.Courses.Comestibles.Frais.FruitsEtLegumes.FruitsEtLegumes;
 import com.company.Courses.Comestibles.Sec.Sec;
@@ -37,41 +38,29 @@ public class Main {
 
     System.out.println("Les Animaux -----------------------------------------------------------");
 
-    Carnivore leopard = new Carnivore("Léopard");
-    leopard.avance();
-    leopard.mange();
+    Mammiferes chien = new Mammiferes("Chien");
+    System.out.println(chien.avance());
 
-    Carnivore lion = new Carnivore("Lion");
-    lion.avance();
-    lion.mange();
+    Mammiferes elephant = new Mammiferes("Eléphant");
+    System.out.println(elephant.avance());
 
-    Carnivore hyene = new Carnivore("Hyène");
-    hyene.avance();
-    hyene.mange();
+    Poisson poissonClown = new Poisson("Poisson Clown", 6);
+    System.out.println(poissonClown.avance());
 
-    Herbivore chevre = new Herbivore("Chèvre");
-    chevre.avance();
-    chevre.mange();
+    Poisson requin = new Poisson("Requin", 8);
+    System.out.println(requin.avance());
 
-    Herbivore mouton = new Herbivore("Mouton");
-    mouton.avance();
-    mouton.mange();
+    Volatiles chauveSouris = new Volatiles("Chauves-souris", 2);
+    System.out.println(chauveSouris.avance());
 
-    Herbivore vache = new Herbivore("Vache");
-    vache.avance();
-    vache.mange();
+    Volatiles autruche = new Volatiles("Autruche", 2);
+    System.out.println(autruche.avance());
 
-    Omnivore singe = new Omnivore("Singe");
-    singe.avance();
-    singe.mange();
+    Insectes papillon = new Insectes("Papillon", 4, 2);
+    System.out.println(papillon.avance());
 
-    Omnivore porc = new Omnivore("Porc");
-    porc.avance();
-    porc.mange();
-
-    Omnivore humain = new Omnivore("Humain");
-    humain.avance();
-    humain.mange();
+    Insectes libellule = new Insectes("Libellule", 4, 2);
+    System.out.println(libellule.avance());
 
     System.out.println("Les Courses ------------------------------------------------------------");
 
